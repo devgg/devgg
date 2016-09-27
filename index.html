@@ -443,49 +443,55 @@
         </div>
     </section>
 </div>
-<div id="projects_container">
-    <div class="container">
-        <section id="projects">
-            <h5>PROJECTS</h5>
-            <div class="row">
-                <div class="offset-by-one five columns column">
-                    <div class="project link" data-link="fonticon">
-                        <img src="img/fonticon.png">
-                        <div class="project_overlay">
-                            <div class="overlay_content">
-                                <div class="project_headline"><u>FONTICON</u></div>
-                                <div class="project_subtitle">
-                                    Create favicons using Font Awesome icons.<br>
-                                    Preview favicons live in browser.
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="five columns column">
-                    <div class="project link" data-link="viewicon">
-                        <img class="project" src="img/viewicon.png">
-                        <div class="project_overlay"></div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="offset-by-one five columns column">
-                    <div class="project link" data-link="robozen">
-                        <img class="project" src="img/robozen.png">
-                        <div class="project_overlay"></div>
-                    </div>
-                </div>
-                <div class="five columns column">
-                    <div class="project link" data-link="hermes">
-                        <img class="project" src="img/hermes.png">
-                        <div class="project_overlay">
-                        </div>
-                    </div>
+<div class="container">
+    <section id="projects">
+        <h5>PROJECTS</h5>
+        <div class="row">
+            <div class="twelve columns">
+                <div class="grid">
+                    <figure class="effect-oscar">
+                        <img src="img/fonticon.png" alt="img09"/>
+                        <figcaption>
+                            <h2><span>font</span>icon</h2>
+                            <p>Create favicons using Font Awesome icons.<br>
+                                Preview favicons live in browser.</p>
+                            <div class="link" data-link="fonticon"></div>
+                        </figcaption>
+                    </figure>
+                    <figure class="effect-oscar">
+                        <img src="img/hermes.png" alt="img10"/>
+                        <figcaption>
+                            <h2><span>her</span>mes</h2>
+                            <p>A YAML based protocol definition language.</p>
+                            <div class="link" data-link="hermes"></div>
+                        </figcaption>
+                    </figure>
                 </div>
             </div>
-        </section>
-    </div>
+        </div>
+        <div class="row">
+            <div class="twelve columns">
+                <div class="grid">
+                    <figure class="effect-oscar">
+                        <img src="img/robozen.png" alt="img09"/>
+                        <figcaption>
+                            <h2><span>robo</span>zen</h2>
+                            <p>RoboZen is a library that provides a central interface to the Robocup Soccer Simulation League.</p>
+                            <div class="link" data-link="robozen"></div>
+                        </figcaption>
+                    </figure>
+                    <figure class="effect-oscar">
+                        <img src="img/viewicon.png" alt="img10"/>
+                        <figcaption>
+                            <h2><span>view</span>icon</h2>
+                            <p>Upload your images and view them live as favicon.</p>
+                            <div class="link" data-link="viewicon"></div>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </section>
 </div>
 <section id="contact">
     <div class="container">
@@ -493,11 +499,11 @@
         <form id="contact_form">
             <div class="row">
                 <div class="six columns">
-                    <label  for="contact_email">Email</label>
+                    <label for="contact_email">Email</label>
                     <input class="u-full-width" type="email" id="contact_email" required>
                 </div>
                 <div class="six columns">
-                    <label  for="contact_subject">Subject</label>
+                    <label for="contact_subject">Subject</label>
                     <input class="u-full-width" type="text" id="contact_subject" required>
                 </div>
             </div>
@@ -505,23 +511,31 @@
             <textarea class="u-full-width" placeholder="Hi Florian …" id="contact_message" required></textarea>
             <input class="u-full-width button" type="submit" value="Submit">
         </form>
+        <div id="contact_overlay">
+            <div id="a">
+                <div id="sending_content">
+                    <div class="spinner"></div>
+                    <span id="sending_text"></span>
+                </div>
+            </div>
+        </div>
     </div>
     <div id="social_container">
         <div class="social hover link" data-link="github">
             <i class="fa fa-github social_button"></i>
-            <div class="social_text">GITHUB</div>
+            <div class="social_text underline">GITHUB</div>
         </div>
         <div class="social hover link" data-link="linkedin">
             <i class="fa fa-linkedin social_button"></i>
-            <div class="social_text">LINKEDIN</div>
+            <div class="social_text underline">LINKEDIN</div>
         </div>
         <div class="social hover" id="email">
             <i class="fa fa-envelope social_button"></i>
-            <div class="social_text">EMAIL</div>
+            <div class="social_text underline">EMAIL</div>
         </div>
         <div class="social hover link" data-link="resume">
             <i class="fa fa-user social_button"></i>
-            <div class="social_text">RÉSUMÉ</div>
+            <div class="social_text underline">RÉSUMÉ</div>
         </div>
     </div>
 </section>

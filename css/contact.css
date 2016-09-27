@@ -32,33 +32,12 @@
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     -moz-osx-font-smoothing: grayscale;
-    position: relative;
     overflow: hidden;
     font-size: 0.8rem;
     font-weight: 200;
 }
 
-.social_text:before {
-    content: "";
-    position: absolute;
-    z-index: -1;
-    left: 50%;
-    right: 50%;
-    bottom: 0;
-    background: white;
-    height: 1px;
-    -webkit-transition-property: left, right;
-    transition-property: left, right;
-    -webkit-transition-duration: 0.3s;
-    transition-duration: 0.3s;
-    -webkit-transition-timing-function: ease-out;
-    transition-timing-function: ease-out;
-}
 
-.social:hover > .social_text:before, .social:focus > .social_text:before, .social:active > .social_text:before {
-    left: 0;
-    right: 0;
-}
 
 
 #contact textarea {
@@ -67,7 +46,7 @@
 }
 
 #social_container {
-    background-color: #1EAEDB;;
+    background-color: rgba(0, 0, 0, 0.7);
     color: white;
     padding: 60px 0;
 }
@@ -76,3 +55,77 @@
     padding-bottom: 0;
     border-bottom: none;
 }
+
+#contact_overlay {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0);
+    text-align: center;
+    visibility: hidden;
+    -moz-transition: visibility, background-color;
+    -webkit-transition: visibility, background-color;
+    -o-transition: visibility, background-color;
+    transition: visibility, background-color;
+    transition-duration: 0.3s;
+}
+
+.sending #contact_overlay {
+    visibility: visible;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.spinner {
+    width: 80px;
+    height: 80px;
+    background-color: #1EAEDB;
+
+    margin: 100px auto 10px auto;
+    -webkit-animation: sk-rotateplane 1.2s infinite ease-in-out;
+    animation: sk-rotateplane 1.2s infinite ease-in-out;
+}
+
+.success .spinner,
+.error .spinner {
+    -webkit-animation: sk-rotateplane 1.2s ease-in-out !important;
+    animation: sk-rotateplane 1.2s ease-in-out !important;
+}
+
+#contact {
+    overflow: hidden;
+}
+
+#sending_content {
+    position: relative;
+    top: -500px;
+    transition: height, left;
+    -moz-transition: top, left;
+    -webkit-transition:top, left;
+    -o-transition: top, left;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in;
+    transition-delay: 0.5s;
+}
+
+.sending #sending_content {
+    top: 0;
+}
+
+.move_out #sending_content {
+    top: -500px;
+}
+
+#sending_text:before {
+    content: "Sending Email";
+}
+
+.success #sending_text:before {
+    content: "Email sent!";
+}
+
+.error #sending_text:before {
+    content: "There was an error.";
+}
+
+

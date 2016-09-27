@@ -9,4 +9,30 @@ html, body, #home {
 }
 
 
+.underline {
+    position: relative;
+}
 
+
+.underline:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 51%;
+    right: 51%;
+    bottom: 0;
+    height: 1px;
+    -webkit-transition-property: left, right;
+    transition-property: left, right;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+    background-color: white;
+}
+
+.underline:hover:before, .underline:focus:before, .underline:active:before,
+.social:hover > .underline:before, .social:focus > .underline:before, .social:active > .underline:before {
+    left: 0;
+    right: 0;
+}

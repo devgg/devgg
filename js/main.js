@@ -63,12 +63,12 @@ $(window).on("load", function () {
     });
 
     $("#email").click(function () {
-        window.location.href = "mailto:" + email;
+        openEmailClient(email);
         event.stopPropagation()
     });
 
 
-
+    var $contact = $('#contact');
     var $contactForm = $('#contact_form');
     var $contactEmail = $("#contact_email");
     var $contactSubject = $('#contact_subject');
@@ -82,7 +82,11 @@ $(window).on("load", function () {
     //$contactEmail.get(0).setCustomValidity("Field must be a number.");
 
     function sendEmail() {
+        emailSending();
         $.ajax({
+            headers: {
+                Accept : "application/json"
+            },
             url: "https://formspree.io/" + email,
             method: "POST",
             data: {
@@ -91,19 +95,59 @@ $(window).on("load", function () {
                 message: $contactMessage.val()
             },
             dataType: "json",
-            beforeSend: function () {
-                $contactForm.append('<div class="alert alert--loading">Sending message…</div>');
-            },
-            success: function (data) {
-                $contactForm.find('.alert--loading').hide();
-                $contactForm.append('<div class="alert alert--success">Message sent!</div>');
-            },
-            error: function (err) {
-                $contactForm.find('.alert--loading').hide();
-                console.log(err);
-                $contactForm.append('<div class="alert alert--error">Ops, there was an error. ' + err.responseText + '</div>');
-            }
+            beforeSend: emailSending,
+            success: emailSentSuccess,
+            error: emailSentError
         });
+    }
+
+    function emailSending() {
+        $contact.addClass('sending');
+    }
+
+    function emailSentSuccess() {
+        emailOutAnimation(true, 300);
+    }
+
+    function emailSentError() {
+        emailOutAnimation(false, 1000);
+    }
+
+
+    function emailOutAnimation(success, timeAfterReply) {
+        var subject = $contactSubject.val();
+        var message = $contactMessage.val();
+        $contactEmail.val("");
+        $contactSubject.val("");
+        $contactMessage.val("");
+        var clazz = success ? 'success' : 'error';
+        window.setTimeout(function () {
+            $contact.addClass(clazz);
+            window.setTimeout(function () {
+                $contact.addClass('move_out');
+                window.setTimeout(function () {
+                    $contact.removeClass('sending');
+                    window.setTimeout(function () {
+                        $contact.removeClass(clazz);
+                        $contact.removeClass('move_out');
+                        if (!success) {
+                            openEmailClient(email, subject, message);
+                        }
+                    }, 500);
+                }, 500);
+            }, timeAfterReply);
+        }, 2000);
+    }
+
+    function openEmailClient(email, subject, content) {
+        var command = "mailto:" + email;
+        if (subject !== undefined) {
+            command += "?subject=" + subject;
+        }
+        if (content !== undefined) {
+            command += "&body=" + content;
+        }
+        window.location.href = command;
     }
 
     //var $skills = $(".skill");

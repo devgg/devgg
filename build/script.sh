@@ -51,5 +51,4 @@ cd out
 git add -A
 SHA=`git rev-parse origin/$SOURCE_BRANCH`
 git commit -m "Deploy to GitHub Pages: ${SHA}"
-git remote set-url origin git@github.com:devgg/devgg.git
 git push origin $TARGET_BRANCH
