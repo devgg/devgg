@@ -38,11 +38,9 @@ $(window).on("load", function () {
     function scroll() {
         if (navOffsetTop <= $window.scrollTop() && !$body.hasClass('nav_docked')) {
             $body.addClass('nav_docked');
-            $navItemContainer.addClass("container");
         }
         if (navOffsetTop > $window.scrollTop() && $body.hasClass('nav_docked')) {
             $body.removeClass('nav_docked');
-            $navItemContainer.removeClass("container");
         }
     }
 

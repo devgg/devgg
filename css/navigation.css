@@ -1,24 +1,15 @@
 #nav_bar {
     display: flex;
     flex-direction: row;
-    border-bottom: 1px solid transparent;
-}
-
-.nav_docked #nav_bar {
-    left: 0;
-    top: 0;
-    z-index: 100;
-    position: fixed;
-    width: 100%;
-    background-color: rgba(255, 255, 255, 0.9);
-    border-color: #eee;
+    justify-content: flex-end;
+    margin-right: 20px;
 }
 
 .nav_item {
     font-size: 11px;
     font-weight: 600;
     letter-spacing: .2rem;
-    margin-right: 35px;
+    margin: 0 20px;
     text-decoration: none;
     line-height: 5rem;
     color: white;
@@ -35,4 +26,21 @@
 
 .nav_docked #nav_placeholder {
     display: block;
+}
+
+#nav_bar_scroll {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    z-index: 100;
+    position: fixed;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.9);
+    left: 0;
+    top: -50px;
+    transition: all 0.2s ease 0s;
+}
+
+.nav_docked #nav_bar_scroll {
+    top: 0;
 }
