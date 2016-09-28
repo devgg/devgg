@@ -17,9 +17,11 @@ $(window).on("load", function () {
         $window.scroll(scroll);
         $window.resize(resize);
         $('.parallax').parallax();
-        $('#home').parallax({imageSrc: 'img/j.jpg'});
-        $('.projects_pic').parallax({imageSrc: 'img/j.jpg'});
-        //$( function () { $('[data-parallax="scroll"]').parallax(); });
+        $('#home').parallax({imageSrc: 'img/home.jpg'});
+        $('#experience_header').parallax({imageSrc: 'img/experience.jpg'});
+        $('#skills_header').parallax({imageSrc: 'img/skills.jpg'});
+        $('#projects_header').parallax({imageSrc: 'img/projects3.jpg'});
+        $('#contact_header').parallax({imageSrc: 'img/contact.jpg'});
         resize();
     }
 

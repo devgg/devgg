@@ -15,12 +15,12 @@ section .introduction {
     font-size: 1.8rem;
 }
 
-.projects_pic {
+.header {
     width: 100%;
     height: 300px;
     display: flex;
     align-items: center;
     justify-content: center;
     color: white;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.2);
 }
