@@ -6,9 +6,6 @@
     border-radius: 2px;
     transition: padding 0.3s ease-in-out;
     height: 16px;
-    /*max-width: 400px;*/
-    /*cursor: pointer;*/
-    /*margin:auto;*/
     line-height: 16px;
 }
 
@@ -30,14 +27,6 @@
 
 #skills .row {
     margin-bottom: 2rem;
-}
-
-#skills h6 {
-    margin-bottom: 1rem;
-}
-
-section {
-    border-bottom: 1px solid #eee;
 }
 
 @media (min-width: 550px) {
