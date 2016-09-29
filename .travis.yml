@@ -11,10 +11,3 @@ env:
   global:
   - ENCRYPTION_LABEL: "2f5895d43ae4"
   - COMMIT_AUTHOR_EMAIL: "flo.gauger@gmail.com"
-
-git:
-  submodules: false
-
-before_install:
-  - sed -i 's/git@github.com:/https:\/\/github.com\//' .gitmodules
-  - git submodule update --init --recursive
