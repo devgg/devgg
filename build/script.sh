@@ -1,5 +1,6 @@
 #!/bin/bash
 
+DOMAIN="gauger.io"
 SOURCE_BRANCH="release"
 TARGET_BRANCH="master"
 
@@ -52,6 +53,8 @@ rm -rf andi/.git
 rm andi/.gitignore
 cp -a andi/. out
 
+touch out/CNAME
+echo $DOMAIN > out/CNAME
 
 npm install -g clean-css
 npm install -g uglify-js
