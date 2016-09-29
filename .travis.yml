@@ -3,6 +3,10 @@ node_js: node
 
 script: build/script.sh
 
+branches:
+  only:
+  - release
+
 env:
   global:
   - ENCRYPTION_LABEL: "2f5895d43ae4"
