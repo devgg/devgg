@@ -1,7 +1,7 @@
 #!/bin/bash
 
-SOURCE_BRANCH="master"
-TARGET_BRANCH="gh-pages"
+SOURCE_BRANCH="release"
+TARGET_BRANCH="master"
 
 if [ "$TRAVIS_PULL_REQUEST" != "false" -o "$TRAVIS_BRANCH" != "$SOURCE_BRANCH" ]; then
     echo "Skipping deploy."
