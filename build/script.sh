@@ -38,9 +38,9 @@ rsync -av --exclude='.git' \
 
 
 git clone https://github.com/devgg/FontIcon.git fonticon
-rsync -av --exclude='fonticon/.git' \
-          --exclude='fonticon/.gitignore' \
-          --exclude='fonticon/README.md' \
+rsync -av --exclude='.git' \
+          --exclude='.gitignore' \
+          --exclude='README.md' \
           fonticon out/fonticon
 
 
