@@ -11,7 +11,7 @@ env:
   global:
   - ENCRYPTION_LABEL: "2f5895d43ae4"
   - COMMIT_AUTHOR_EMAIL: "flo.gauger@gmail.com"
-  #
+
 git:
   submodules: false
 

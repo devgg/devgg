@@ -32,7 +32,16 @@ rsync -av --exclude='.git' \
           --exclude='.travis.yml' \
           --exclude='.gitignore' \
           --exclude='deploy_key.enc' \
-          . out/
+          --exclude='.gitmodules' \
+          --exclude='subpages' \
+          . out
+
+
+git clone https://github.com/devgg/FontIcon.git fonticon
+rsync -av --exclude='.gitignore' \
+          --exclude='README.md' \
+          fonticon out/fonticon
+
 
 npm install -g clean-css
 npm install -g uglify-js
