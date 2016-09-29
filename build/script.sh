@@ -38,10 +38,12 @@ rsync -av --exclude='.git' \
 
 
 git clone https://github.com/devgg/FontIcon.git fonticon
+cd fonticon
 rsync -av --exclude='.git' \
           --exclude='.gitignore' \
           --exclude='README.md' \
-          fonticon out/fonticon
+          . ../out/fonticon
+cd ..
 
 
 npm install -g clean-css
