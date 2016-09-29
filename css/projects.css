@@ -53,7 +53,7 @@
 
 /* Anchor will cover the whole item by default */
 .grid figure figcaption > .link {
-    z-index: 1000;
+    z-index: 99;
     /*text-indent: 200%;*/
     white-space: nowrap;
     font-size: 0;
@@ -181,7 +181,7 @@ figure.effect-oscar:hover img {
 
 /* Anchor will cover the whole item by default */
 .grid figure figcaption > a {
-    z-index: 1000;
+    z-index: 99;
     text-indent: 200%;
     white-space: nowrap;
     font-size: 0;
