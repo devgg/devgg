@@ -50,7 +50,7 @@ rm out/viewicon/README.md
 git clone https://github.com/devgg/andi.git andi
 rm -rf andi/.git
 rm andi/.gitignore
-rsync -av andi out
+cp -a andi/. out
 
 
 npm install -g clean-css
