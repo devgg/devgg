@@ -20,7 +20,7 @@ $(window).on("load", function () {
         $('#home').parallax({imageSrc: 'img/home.jpg'});
         $('#experience_header').parallax({imageSrc: 'img/experience.jpg'});
         $('#skills_header').parallax({imageSrc: 'img/skills.jpg'});
-        $('#projects_header').parallax({imageSrc: 'img/projects3.jpg'});
+        $('#projects_header').parallax({imageSrc: 'img/projects.jpg'});
         $('#contact_header').parallax({imageSrc: 'img/contact.jpg'});
         resize();
     }
