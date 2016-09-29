@@ -19,8 +19,6 @@ ssh-add build/deploy_key
 
 git clone git@github.com:devgg/devgg.git out
 cd out
-git config user.name "Travis CI"
-git config user.email "$COMMIT_AUTHOR_EMAIL"
 git checkout -b $TARGET_BRANCH "origin/$TARGET_BRANCH"
 cd ..
 
@@ -50,5 +48,7 @@ uglifyjs js/main.js -o out/js/main.js
 cd out
 git add -A
 SHA=`git rev-parse origin/$SOURCE_BRANCH`
+git config user.name "Travis CI"
+git config user.email "$COMMIT_AUTHOR_EMAIL"
 git commit -m "Deploy to GitHub Pages: ${SHA}"
 git push origin $TARGET_BRANCH
