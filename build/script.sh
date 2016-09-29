@@ -13,7 +13,7 @@ chmod 600 build/deploy_key
 eval `ssh-agent -s`
 ssh-add build/deploy_key
 
-git clone git@github.com:devgg/devgg.git out
+git clone git@github.com:devgg/devgg.github.io.git out
 cd out
 git checkout -b $TARGET_BRANCH "origin/$TARGET_BRANCH"
 cd ..
