@@ -130,3 +130,7 @@
 #contact .container {
     margin-bottom: 40px;
 }
+
+#contact a:hover {
+    color: #333;
+}
