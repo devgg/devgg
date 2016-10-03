@@ -16,12 +16,11 @@ $(window).on("load", function () {
     function init() {
         $window.scroll(scroll);
         $window.resize(resize);
-        $('.parallax').parallax();
-        $('#home').parallax({imageSrc: 'img/home.jpg'});
-        $('#experience_header').parallax({imageSrc: 'img/experience.jpg'});
-        $('#skills_header').parallax({imageSrc: 'img/skills.jpg'});
-        $('#projects_header').parallax({imageSrc: 'img/projects.jpg'});
-        $('#contact_header').parallax({imageSrc: 'img/contact.jpg'});
+        $('#home').parallax({imageSrc: 'img/home-min.jpg'});
+        $('#experience_header').parallax({imageSrc: 'img/experience-min.jpg'});
+        $('#skills_header').parallax({imageSrc: 'img/skills-min.jpg'});
+        $('#projects_header').parallax({imageSrc: 'img/projects-min.jpg'});
+        $('#contact_header').parallax({imageSrc: 'img/contact-min.jpg'});
         resize();
     }
 

@@ -35,6 +35,7 @@ rsync -av --exclude='.git' \
           --exclude='deploy_key.enc' \
           --exclude='.gitmodules' \
           --exclude='subpages' \
+          --exclude='res/img' \
           . out
 
 
