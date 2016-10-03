@@ -49,11 +49,6 @@ rm -rf out/viewicon/.git
 rm out/viewicon/.gitignore
 rm out/viewicon/README.md
 
-git clone https://github.com/devgg/andi.git andi
-rm -rf andi/.git
-rm andi/.gitignore
-cp -a andi/. out
-
 touch out/CNAME
 echo $DOMAIN > out/CNAME
 
