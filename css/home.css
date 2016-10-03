@@ -18,3 +18,10 @@
 #home_content i {
     color: #1EAEDB;
 }
+
+
+@media (max-width: 650px) {
+    #home h2 {
+        font-size: 2.8rem;
+    }
+}

@@ -23,3 +23,10 @@ section .introduction {
     justify-content: center;
     color: white;
 }
+
+
+@media (max-width: 650px) {
+    .header {
+        height: 150px;
+    }
+}

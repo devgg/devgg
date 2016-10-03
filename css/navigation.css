@@ -44,3 +44,10 @@
 .nav_docked #nav_bar_scroll {
     top: 0;
 }
+
+
+@media (max-width: 650px) {
+    #nav_bar, #nav_bar_scroll {
+        /*display:none;*/
+    }
+}
