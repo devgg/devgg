@@ -46,7 +46,7 @@ $(window).on("load", function () {
     $(".nav_item").click(function () {
         var $target = $($(this).data("target"));
         $('html, body').animate({
-            scrollTop: $target.offset().top - $navBar.outerHeight()
+            scrollTop: $target.offset().top - $navBar.outerHeight() + 1
         }, 500);
     });
 

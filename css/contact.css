@@ -116,7 +116,7 @@
 }
 
 #sending_text:before {
-    content: "Sending Email";
+    content: "Sending Email...";
 }
 
 .success #sending_text:before {

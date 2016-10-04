@@ -69,8 +69,8 @@
     }
 
     .spinner {
-        height: 160px;
-        width: 160px;
+        height: 5vw;
+        width: 5vw;
         margin: 7vw auto 10px auto;
     }
 
