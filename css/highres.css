@@ -74,7 +74,7 @@
         margin: 7vw auto 10px auto;
     }
 
-    .social_button {
+    .social_button .fa {
         margin: 0 0.7vw;
         font-size: 2.07vw;
     }
@@ -89,7 +89,103 @@
 
 
 
+/*@media (min-width: 85.375em) {*/
+/*}*/
+
+/*@media (min-width: 120em) {*/
+
+/*}*/
+
+@media (min-width: 2560px) {
+
+    .container {
+        max-width: 107em;
+    }
 
 
+    body {
+        font-size: 1.664em;
+    }
+
+    h2 {
+        font-size: 4.64em;
+    }
+
+    .company .title {
+        font-size: 2em;
+    }
+
+    .skill {
+        height: 1.76em;
+        line-height: 1.76em;
+        padding: 0.48em;
+    }
+
+    .skill_rating {
+        font-size: 1.344em;
+        line-height: 1.76em;
+    }
+
+    #skills .row {
+        margin-bottom: 2.24em;
+    }
+
+    .grid figure {
+        margin: 1.12em 6.4em;
+    }
+
+    figure.effect-oscar figcaption::before {
+        top: 3.36em;
+        right: 3.36em;
+        bottom: 3.36em;
+        left: 3.36em;
+    }
+
+    .grid figure p {
+        margin: 0 3.52em;
+    }
+
+    .nav_item {
+        font-size: 1.216em;
+        margin: 0 1.6em;
+        line-height: 4.8em;
+    }
+
+    #nav_bar_scroll {
+        top: -4.8em;
+    }
+
+    .header {
+        height: 33.28em;
+    }
+
+    #contact textarea {
+        height: 16.64em;
+    }
+
+    #contact input {
+        height: 4.208em;
+    }
+
+    #contact input[type=submit] {
+        font-size: 1.216em;
+        line-height: 4.208em;
+    }
+
+    .spinner {
+        height: 8em;
+        width: 8em;
+        margin: 11.2em auto 10px auto;
+    }
+
+    .social_button .fa {
+        /*margin: 0 1.12em;*/
+        font-size: 3.3em;
+    }
+
+    .social_text {
+        font-size: 1.12em;
+    }
+}
 
 
