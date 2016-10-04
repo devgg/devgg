@@ -1,0 +1,95 @@
+@media (min-width: 1440px) {
+    body {
+        font-size: 1.04vw;
+    }
+
+    h2 {
+        font-size: 2.9vw;
+    }
+
+    .company .title {
+        font-size: 1.25vw;
+    }
+
+    .skill {
+        height: 1.1vw;
+        line-height: 1.1vw;
+        padding: 0.3vw 0.3vw;
+    }
+
+    .skill_rating {
+        font-size: 0.84vw;
+        line-height: 1.1vw;
+    }
+
+    #skills .row {
+        margin-bottom: 1.4vw;
+    }
+
+    .grid figure {
+        margin: 0.7vw 4%;
+    }
+
+    figure.effect-oscar figcaption::before {
+        top: 2.1vw;
+        right: 2.1vw;
+        bottom: 2.1vw;
+        left: 2.1vw;
+    }
+
+    .grid figure p {
+        margin: 0 2.2vw;
+    }
+
+    .nav_item {
+        font-size: 0.76vw;
+        margin: 0 1vw;
+        line-height: 3vw;
+    }
+
+    #nav_bar_scroll {
+        top: -3vw;
+    }
+
+    .header {
+        height: 20.8vw;
+    }
+
+    #contact textarea {
+        height: 10.4vw;
+    }
+
+    #contact input {
+        height: 2.63vw;
+    }
+
+    #contact input[type=submit] {
+        font-size: 0.76vw;
+        line-height: 2.63vw;
+    }
+
+    .spinner {
+        height: 160px;
+        width: 160px;
+        margin: 7vw auto 10px auto;
+    }
+
+    .social_button {
+        margin: 0 0.7vw;
+        font-size: 2.07vw;
+    }
+
+    .social_text {
+        font-size: 0.7vw;
+    }
+}
+
+
+
+
+
+
+
+
+
+

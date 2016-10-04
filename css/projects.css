@@ -12,8 +12,8 @@
     overflow: hidden;
     margin: 10px 4%;
     min-width: 320px;
-    max-width: 480px;
-    max-height: 360px;
+    /*max-width: 480px;*/
+    /*max-height: 360px;*/
     flex: 1 1 320px;
     width: 42%;
     text-align: center;
