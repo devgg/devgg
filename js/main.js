@@ -5,29 +5,35 @@ $(window).on("load", function () {
     var $body = $("body");
     var $about = $("#about");
     var $navBar = $('#nav_bar');
-    var $navItemContainer = $("#nav_item_container");
     var $contact = $('#contact');
     var $contactForm = $('#contact_form');
     var $contactEmail = $("#contact_email");
     var $contactSubject = $('#contact_subject');
     var $contactMessage = $('#contact_message');
 
+    $window.scroll(scroll);
+    $window.resize(resize);
+    $('#home').parallax({imageSrc: 'img/home-min.jpg'});
+    $('#experience_header').parallax({imageSrc: 'img/experience-min.jpg'});
+    $('#skills_header').parallax({imageSrc: 'img/skills-min.jpg'});
+    $('#projects_header').parallax({imageSrc: 'img/projects-min.jpg'});
+    $('#contact_header').parallax({imageSrc: 'img/contact-min.jpg'});
+    resize();
 
-    function init() {
-        $window.scroll(scroll);
-        $window.resize(resize);
-        $('#home').parallax({imageSrc: 'img/home-min.jpg'});
-        $('#experience_header').parallax({imageSrc: 'img/experience-min.jpg'});
-        $('#skills_header').parallax({imageSrc: 'img/skills-min.jpg'});
-        $('#projects_header').parallax({imageSrc: 'img/projects-min.jpg'});
-        $('#contact_header').parallax({imageSrc: 'img/contact-min.jpg'});
-        resize();
-    }
+    $(".nav_item").click(function () {
+        var $target = $($(this).data("target"));
+        $('html, body').animate({
+            scrollTop: $target.offset().top - $navBar.outerHeight() + 1
+        }, 500);
+    });
 
-    init();
+    $contactForm.submit(function (event) {
+        sendEmail();
+        event.preventDefault();
+    });
+
 
     var navOffsetTop;
-
     function resize() {
         $body.removeClass('nav_docked');
         navOffsetTop = $about.offset().top - $navBar.outerHeight();
@@ -43,28 +49,11 @@ $(window).on("load", function () {
         }
     }
 
-    $(".nav_item").click(function () {
-        var $target = $($(this).data("target"));
-        $('html, body').animate({
-            scrollTop: $target.offset().top - $navBar.outerHeight() + 1
-        }, 500);
-    });
-
-    function scrollTo(hash) {
-        location.hash = "#" + hash;
-    }
-
-    $contactForm.submit(function (event) {
-        sendEmail();
-        event.preventDefault();
-    });
-
-
     function sendEmail() {
         $contact.addClass('sending');
         $.ajax({
             headers: {
-                Accept : "application/json"
+                Accept: "application/json"
             },
             url: "https://formspree.io/" + email,
             method: "POST",
