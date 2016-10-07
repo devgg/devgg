@@ -37,7 +37,11 @@ $(window).on("load", function () {
     $("figure a").click(function (event) {
         event.preventDefault();
         var isHovered = $(this).is(":hover");
-        alert(isHovered)
+        alert("test2");
+    });
+
+    $("figure a").on('touch touchstart', function () {
+        alert("test");
     });
 
     var navOffsetTop;
