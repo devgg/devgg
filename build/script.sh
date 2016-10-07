@@ -47,7 +47,7 @@ rm out/fonticon/README.md
 git clone https://github.com/devgg/ViewIcon.git out/viewicon
 rm -rf out/viewicon/.git
 rm out/viewicon/.gitignore
-rm out/viewicon/README.md
+rm out/viewicon/README.m
 
 touch out/CNAME
 echo $DOMAIN > out/CNAME
@@ -57,7 +57,7 @@ npm install -g uglify-js
 mkdir out/css
 mkdir out/js
 cleancss css/main.css -o out/css/main.css
-uglifyjs js/main.js -o out/js/main.js
+uglifyjs js/main.js js/mobile.js -o out/js/main.js
 
 cd out
 git add -A
