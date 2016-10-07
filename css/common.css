@@ -2,7 +2,6 @@
     max-width: 67%;
 }
 
-
 html, body, #home {
     margin: 0;
     padding: 0;
@@ -28,6 +27,10 @@ section .introduction {
 @media (max-width: 650px) {
     .header {
         height: 150px;
+    }
+
+    .container {
+        max-width: 100%;
     }
 }
 
