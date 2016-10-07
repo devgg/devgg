@@ -23,6 +23,11 @@ section .introduction {
     color: white;
 }
 
+#home h2,
+.header h2 {
+    margin: 0;
+}
+
 
 @media (max-width: 650px) {
     .header {

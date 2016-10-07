@@ -33,7 +33,15 @@ $(window).on("load", function () {
     });
 
 
+    var hover;
+    $("figure a").click(function (event) {
+        event.preventDefault();
+        var isHovered = $(this).is(":hover");
+        alert(isHovered)
+    });
+
     var navOffsetTop;
+
     function resize() {
         $body.removeClass('nav_docked');
         navOffsetTop = $about.offset().top - $navBar.outerHeight();
