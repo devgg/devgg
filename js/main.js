@@ -14,6 +14,7 @@ $(window).on("load", function () {
     $window.scroll(scroll);
     $window.resize(resize);
     $('#home').parallax({imageSrc: 'img/home-min.jpg'});
+    $('#education_header').parallax({imageSrc: 'img/education-min.jpg'});
     $('#experience_header').parallax({imageSrc: 'img/experience-min.jpg'});
     $('#skills_header').parallax({imageSrc: 'img/skills-min.jpg'});
     $('#projects_header').parallax({imageSrc: 'img/projects-min.jpg'});

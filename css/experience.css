@@ -6,10 +6,12 @@
     flex-direction: column;
 }
 
+#education .row,
 #experience .row {
     margin-bottom: 40px;
 }
 
+#education .position,
 #experience .position {
     font-weight: 600;
     text-transform: uppercase;

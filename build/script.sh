@@ -57,7 +57,7 @@ npm install -g uglify-js
 mkdir out/css
 mkdir out/js
 cleancss css/main.css -o out/css/main.css
-uglifyjs js/main.js js/mobile.js -o out/js/main.js
+uglifyjs js/mobile.js js/main.js -o out/js/main.js
 
 cd out
 git add -A

@@ -4,6 +4,7 @@
     justify-content: center;
     height: 100vh;
     background-size: cover;
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
 #home_content {
