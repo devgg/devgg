@@ -13,12 +13,11 @@ $(window).on("load", function () {
 
     $window.scroll(scroll);
     $window.resize(resize);
-    $('#home').parallax({imageSrc: 'img/home-min.jpg'});
-    $('#education_header').parallax({imageSrc: 'img/education-min2.jpg'});
-    $('#experience_header').parallax({imageSrc: 'img/experience-min.jpg'});
-    $('#skills_header').parallax({imageSrc: 'img/skills-min.jpg'});
-    $('#projects_header').parallax({imageSrc: 'img/projects-min.jpg'});
-    $('#contact_header').parallax({imageSrc: 'img/contact-min.jpg'});
+    $('#education_header').parallax({imageSrc: 'img/education-bw-min.jpg'});
+    $('#experience_header').parallax({imageSrc: 'img/experience-bw-min.jpg'});
+    $('#skills_header').parallax({imageSrc: 'img/skills-bw-min.jpg'});
+    $('#projects_header').parallax({imageSrc: 'img/projects-bw-min.jpg'});
+    $('#contact_header').parallax({imageSrc: 'img/contact-bw-min.jpg'});
     resize();
 
     $(".nav_item").click(function () {

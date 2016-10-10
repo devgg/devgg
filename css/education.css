@@ -14,7 +14,8 @@
 }
 
 .ki_color {
-    fill: #009684;
+    /*fill: #009684;*/
+    fill: #1EAEDB;
 }
 
 @media (min-width: 550px) {
