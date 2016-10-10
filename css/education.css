@@ -1,0 +1,24 @@
+
+
+
+#logo_ki {
+    width: 100%;
+    max-width: 200px;
+    min-width: 150px;
+}
+
+
+
+.logo_fill {
+    fill: black;
+}
+
+.ki_color {
+    fill: #009684;
+}
+
+@media (min-width: 550px) {
+    .offset-by-two.column, .offset-by-two.columns {
+        margin-left: 21.3333333333%;
+    }
+}
