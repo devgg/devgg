@@ -100,7 +100,7 @@
     top: -500px;
     transition: height, left;
     -moz-transition: top, left;
-    -webkit-transition:top, left;
+    -webkit-transition: top, left;
     -o-transition: top, left;
     transition-duration: 0.3s;
     transition-timing-function: ease-in;
@@ -135,7 +135,10 @@
     color: #333;
 }
 
+#contact .introduction i {
+    color:#1EAEDB;
+}
 
 /*#contact_header {*/
-    /*color: #FE4F4A;*/
+/*color: #FE4F4A;*/
 /*}*/
