@@ -97,7 +97,7 @@
 
 #sending_content {
     position: relative;
-    top: -500px;
+    top: -300px;
     transition: height, left;
     -moz-transition: top, left;
     -webkit-transition: top, left;
@@ -112,7 +112,7 @@
 }
 
 .move_out #sending_content {
-    top: -500px;
+    top: -300px;
 }
 
 #sending_text:before {
@@ -137,6 +137,11 @@
 
 #contact .introduction i {
     color:#1EAEDB;
+}
+
+#contact_form {
+    position: relative;
+    overflow: hidden;
 }
 
 /*#contact_header {*/
