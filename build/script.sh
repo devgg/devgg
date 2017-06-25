@@ -52,8 +52,8 @@ rm out/viewicon/README.m
 touch out/CNAME
 echo $DOMAIN > out/CNAME
 
-npm install -g clean-css
-npm install -g uglify-js
+npm install -g clean-css@3.4.25
+npm install -g uglify-js@3.0.19
 mkdir out/css
 mkdir out/js
 cleancss css/main.css -o out/css/main.css
