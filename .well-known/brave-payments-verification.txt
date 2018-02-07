@@ -1,0 +1,4 @@
+This is a Brave Payments publisher verification file.
+
+Domain: gauger.io
+Token: 56b10691ecc5f95743874fa1dcf8e72a1b19ffe28800ea91bd744f1057d02921
